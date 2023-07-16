@@ -1,0 +1,38 @@
+Based on the BaseModel code you provided, here's the modified code for the classes that inherit from BaseModel:
+
+from models.base_model import BaseModel
+
+class State(BaseModel):
+    """The state class"""
+    name = ''
+
+class City(BaseModel):
+    """The city class, contains state ID and name"""
+    state_id = ''
+    name = ''
+
+class Amenity(BaseModel):
+    """The amenity class"""
+    name = ''
+
+class Place(BaseModel):
+    """The place class"""
+    city_id = ''
+    user_id = ''
+    name = ''
+    description = ''
+    number_rooms = 0
+    number_bathrooms = 0
+    max_guest = 0
+    price_by_night = 0
+    latitude = 0.0
+    longitude = 0.0
+    amenity_ids = []
+
+class Review(BaseModel):
+    """The review class"""
+    place_id = ''
+    user_id = ''
+    text = ''
+
+In this modified code, each class inherits from the   BaseModel   class. The public class attributes are defined according to the given specifications, with empty strings, zero values, or empty lists as the initial values.
