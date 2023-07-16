@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 Based on the BaseModel code you provided, here's the modified code for the classes that inherit from BaseModel:
 
 from models.base_model import BaseModel
